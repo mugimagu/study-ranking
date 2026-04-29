@@ -3,11 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>勉強ランキング</title>
+    <title>Study Ranking</title>
+    <!-- Tailwind CSS (デザインを崩さないためのスタイルシート) -->
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body class="bg-gray-50">
     <div id="root"></div>
-    <!-- type="text/babel" ではなく "module" にし、パスも修正 -->
+    <!-- 
+      重要: GitHubで App.jsx を src フォルダの中に置く構成に合わせ、
+      読み込み先を /src/main.jsx に指定しています。
+    -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

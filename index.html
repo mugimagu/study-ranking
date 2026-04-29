@@ -4,15 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>勉強ランキング</title>
-    <!-- デザインを整えるためのツール -->
+    <!-- デザインツール (Tailwind CSS) -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- React本体とReactDOMをブラウザで直接動かすための設定 -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    
+    <!-- JSX（App.jsxの中身）をブラウザが理解できるように変換するツール -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   </head>
   <body>
     <div id="root"></div>
+    
     <!-- 
-      重要：GitHubのファイル名が「App.jsx」なので、
-      ここも正確に「/App.jsx」に設定します。
+      注意：Vite環境でビルドせずに直接読み込む場合、
+      type="text/babel" と指定して読み込む必要があります。
     -->
-    <script type="module" src="/App.jsx"></script>
+    <script type="text/babel" data-type="module" src="/App.jsx"></script>
   </body>
 </html>

@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useMemo } from 'react';
-import { initializeApp } from 'firebase/app';
-import { getAuth, signInAnonymously, onAuthStateChanged } from 'firebase/auth';
-import { getFirestore, doc, setDoc, collection, onSnapshot } from 'firebase/firestore';
-import { Trophy, BookOpen, User, Plus, X, Users, BarChart3, Copy, Settings } from 'lucide-react';
+//import React, { useState, useEffect, useMemo } from 'react';
+//import { initializeApp } from 'firebase/app';
+//import { getAuth, signInAnonymously, onAuthStateChanged } from 'firebase/auth';
+//import { getFirestore, doc, setDoc, collection, onSnapshot } from 'firebase/firestore';
+//import { Trophy, BookOpen, User, Plus, X, Users, BarChart3, Copy, Settings } from 'lucide-react';
 
 /**
  * 【重要】Firebaseから取得した自分の設定に書き換えてください
@@ -356,3 +356,8 @@ export default function App() {
     </div>
   );
 }
+
+// --- App.jsx の末尾に追加 ---
+const container = document.getElementById('root');
+const root = ReactDOM.createRoot(container);
+root.render(<App />);
